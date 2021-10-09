@@ -52,4 +52,10 @@ class software::core {
   package { 'bash-git-prompt':
     ensure => installed,
   }
+  package { 'gnome-software-mobile':
+    ensure => absent,
+  }
+  package { 'pacman-contrib':
+    ensure => installed,
+  }
 }
