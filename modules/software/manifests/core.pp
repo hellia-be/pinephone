@@ -1,4 +1,7 @@
 class software::core {
+  package { 'gpsd':
+    ensure => installed,
+  }
   package { 'danctnix-tweaks':
     ensure => installed,
   }
