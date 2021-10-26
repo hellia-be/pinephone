@@ -1,4 +1,7 @@
 class software::core {
+  package { 'wget':
+    ensure => installed,
+  }
   package { 'gpsd':
     ensure => installed,
   }
